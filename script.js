@@ -1,6 +1,5 @@
 const grid = document.querySelector(".grid")
 
-
 function populateGrid(gridElement, x, y) {
     for (let line = 1; line <= y; line++) {
         lineElement = document.createElement("div")
@@ -16,4 +15,14 @@ function populateGrid(gridElement, x, y) {
     }
 }
 
+function addHoverEffect(grid) {
+    grid.addEventListener("mouseover",(e)=>{
+        e.target.classList.add("painted")
+    })
+}
+
 populateGrid(grid, 16, 16)
+addHoverEffect(grid)
+
+
+

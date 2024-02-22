@@ -60,3 +60,7 @@ main .grid {
     height: calc(100% /16);
     display: flex;
 }
+
+.painted{
+    background-color: black;
+}
