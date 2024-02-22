@@ -2,7 +2,6 @@
     --dark-green: #009B4D;
     --ivory-white: #FAF5E9;
     --tangerine-yellow: #FFCC00;
-    --battle-size:150px;
 }
 
 * {
@@ -27,6 +26,22 @@ footer {
     color: var(--ivory-white);
 }
 
-footer a{
+footer a {
     color: var(--tangerine-yellow);
- }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .controls{
+    background-color: grey;
+}
+
+main .grid {
+    height: 75vh;
+    aspect-ratio: 1/1;
+    border: 3px black solid;
+    background-color: white;
+}
