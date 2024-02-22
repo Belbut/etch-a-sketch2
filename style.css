@@ -1,0 +1,32 @@
+:root {
+    --dark-green: #009B4D;
+    --ivory-white: #FAF5E9;
+    --tangerine-yellow: #FFCC00;
+    --battle-size:150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Value-Serif-Regular, Halant, Vollkorn, Georgia, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: var(--ivory-white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: black;
+    color: var(--ivory-white);
+}
+
+footer a{
+    color: var(--tangerine-yellow);
+ }
