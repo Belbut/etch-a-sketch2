@@ -44,4 +44,19 @@ main .grid {
     aspect-ratio: 1/1;
     border: 3px black solid;
     background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.square{
+    height: 100%;
+    aspect-ratio: 16/16;
+    border: 1px solid grey;
+    box-sizing: border-box;  
+}
+
+.line{
+    height: calc(100% /16);
+    display: flex;
 }
