@@ -16,13 +16,26 @@ function populateGrid(gridElement, x, y) {
 }
 
 function addHoverEffect(grid) {
-    grid.addEventListener("mouseover",(e)=>{
+    grid.addEventListener("mouseover", (e) => {
         e.target.classList.add("painted")
     })
 }
 
 populateGrid(grid, 16, 16)
 addHoverEffect(grid)
+bindControls()
 
 
+function bindControls() {
+
+    const controlGrid = document.querySelector("#lines")
+    const controlLabel = document.querySelector("#label-line")
+
+    controlGrid.addEventListener("input", (e) => {
+        gridSize = e.target.value;
+        controlLabel.textContent = `${gridSize} Lines`
+        grid.replaceChildren()
+        populateGrid(grid, gridSize, gridSize)
+    })
+}
 

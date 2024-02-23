@@ -32,11 +32,19 @@ footer a {
 
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 main .controls{
     background-color: grey;
+    padding: 10px;
+}
+
+main .controls,
+main .placeholder{
+    width: 12%;
 }
 
 main .grid {
@@ -44,21 +52,22 @@ main .grid {
     aspect-ratio: 1/1;
     border: 3px black solid;
     background-color: white;
-
+    
     display: flex;
     flex-direction: column;
 }
 
 .square{
     height: 100%;
-    aspect-ratio: 16/16;
+    flex: 1;
     border: 1px solid grey;
     box-sizing: border-box;  
 }
 
 .line{
-    height: calc(100% /16);
+    flex: 1;
     display: flex;
+    
 }
 
 .painted{
